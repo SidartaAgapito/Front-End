@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #000000;
+    color: #f6f6f6;
+}
+
+.tilulo-destaque {
+    color: #22D4FD;
+}
+
+
+.apresentacao {
+ margin: 10% 15%;
+ display: flex;
+ align-items: center;   
+ justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: #22d4fd;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.moldura {
+    width: 300px; /* Tamanho da moldura */
+    height: 300px; /* Tamanho da moldura */
+    padding: 10px; /* Espaço entre a imagem e a borda da moldura */
+    background-color: white; /* Cor da moldura */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Efeito de sombra em volta da moldura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.moldura:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.9);
+}
+
+.moldura img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    border-radius: 10px; 
+}
