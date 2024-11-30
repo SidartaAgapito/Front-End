@@ -48,27 +48,39 @@ body {
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__links__link {
-    background-color: #22d4fd;
-    width: 280px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #000000;
+    color: #f6f6f6;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    border: 2px solid #22D4Fd;
 }
 
 .moldura {
-    width: 300px; /* Tamanho da moldura */
-    height: 300px; /* Tamanho da moldura */
-    padding: 10px; /* Espaço entre a imagem e a borda da moldura */
-    background-color: white; /* Cor da moldura */
+    width: 300px; 
+    height: 300px;
+    padding: 10px;
+    background-color: white; 
     border-radius: 15px; /* Bordas arredondadas */
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Efeito de sombra em volta da moldura */
     display: flex;
